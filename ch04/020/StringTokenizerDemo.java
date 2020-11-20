@@ -1,0 +1,18 @@
+//https://www.java2novice.com/stringtokenizer/multiple-delimiters/
+import java.util.Scanner;
+import java.util.StringTokenizer;
+
+public class StringTokenizerDemo {
+	public static void main(String[] args){
+		Scanner sc=new Scanner(System.in);
+		String str;
+		str=sc.next();
+		StringTokenizer st;
+
+		st = new StringTokenizer(str, "%|abcdefghijklmnopqrstuvwxyz");
+
+		while(st.hasMoreTokens()){
+			System.out.println(st.nextToken());
+		}
+	}
+}
