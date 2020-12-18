@@ -1,0 +1,12 @@
+import java.util.Scanner;
+
+public class MyMain{
+	public static void main(){
+		Scanner sc = new Scanner(System.in);
+		int b = sc.nextInt();
+		int d = sc.nextInt();
+		int e = sc.nextInt();
+
+
+	}
+}
