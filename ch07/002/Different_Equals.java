@@ -1,0 +1,26 @@
+//https://www.geeksforgeeks.org/arrays-sort-in-java-with-examples/
+//https://stackoverflow.com/questions/1354326/java-how-to-sort-an-array-of-floats-in-reverse-order
+import java.util.Scanner;
+import java.util.Arrays;
+import java.util.Collections;
+
+public class Different_Equals{
+	public static void main(String args[]){
+		Scanner sc = new Scanner(System.in);
+		String str = sc.nextLine();
+		String strArray[] = str.split(" ");
+		int n = strArray.length;
+
+		//'F'loat !!!
+		Float a[] = new Float[n];
+		for(int i = 0; i < n; i++)
+			a[i] = Float.valueOf(strArray[i]);
+
+		Arrays.sort(a, Collections.reverseOrder());
+		//Arrays.sort(a);
+
+		System.out.print("Large to small:");
+		for(int i = 0; i < n; i++)
+			System.out.print(" " + a[i]);
+	}
+}
